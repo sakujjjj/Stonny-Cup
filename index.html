@@ -29,7 +29,9 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="#home" class="nav-logo">
-                <img src="images/logo.jpeg" alt="Stonny Cup">
+                <div class="logo-wrapper">
+                    <img src="images/logo.jpeg" alt="Stonny Cup">
+                </div>
                 <span class="glitch-text" data-text="STONNY CUP">STONNY CUP</span>
             </a>
             <button class="nav-toggle" id="navToggle">
@@ -330,7 +332,9 @@
     <section class="qualification-section">
         <div class="qualification-container">
             <h2 class="section-title glitch" data-text="QUALIFICATION">QUALIFICATION</h2>
-            <div class="qualification-content">
+            
+            <!-- 基本資格 -->
+            <!-- <div class="qualification-content">
                 <div class="qualification-item">
                     <div class="item-icon neon-text">✓</div>
                     <p>年滿 18 歲以上</p>
@@ -347,7 +351,56 @@
                     <div class="item-icon neon-text">✓</div>
                     <p>遵守比賽規則與精神</p>
                 </div>
+            </div> -->
+
+            <!-- 獎勵與聯絡資訊 -->
+            <div class="qualification-grid">
+                <div class="qualification-card">
+                    <h3 class="card-title-cyber neon-text">🏆 REWARDS</h3>
+                    <ul class="card-list">
+                        <li><span class="highlight-text">冠軍獎金</span> NT$150,000</li>
+                        <li><span class="highlight-text">亞軍獎金</span> NT$30,000</li>
+                        <li><span class="highlight-text">季軍獎金</span> NT$15,000</li>
+                    </ul>
+                </div>
+                <div class="qualification-card">
+                    <h3 class="card-title-cyber neon-text">📞 CONTACT</h3>
+                    <ul class="card-list">
+                        <li><span class="highlight-text">賽事總監</span> Stonny</li>
+                        <li><span class="highlight-text">聯絡電話</span> 0912-345-678</li>
+                        <li><span class="highlight-text">Email</span> Stonny@stonnycup.com</li>
+                    </ul>
+                </div>
             </div>
+
+            <!-- 裁判與裝備 -->
+            <div class="qualification-grid">
+                <div class="qualification-card">
+                    <h3 class="card-title-cyber neon-text">⚖️ REFEREE</h3>
+                    <ul class="card-list">
+                        <li>國際認證裁判</li>
+                        <li>鷹眼系統輔助</li>
+                        <li>專業按摩團隊</li>
+                    </ul>
+                </div>
+                <div class="qualification-card">
+                    <h3 class="card-title-cyber neon-text">👕 EQUIPMENT</h3>
+                    <ul class="card-list">
+                        <li>自備球拍及運動鞋</li>
+                        <li>穿著運動服裝</li>
+                        <li>禁止穿著牛仔褲</li>
+                    </ul>
+                </div>
+                <div class="qualification-card">
+                    <h3 class="card-title-cyber neon-text">🛡️ INSURANCE</h3>
+                    <ul class="card-list">
+                        <li>主辦單位提供意外險</li>
+                        <li>保額2億元</li>
+                        <li>醫療給付3000萬元</li>
+                    </ul>
+                </div>
+            </div>
+
             <div class="sponsor-info">
                 <p class="sponsor-text neon-text">以上皆由 Stonny 贊助</p>
             </div>
@@ -358,6 +411,9 @@
     <section class="players-section" id="players">
         <div class="players-container">
             <h2 class="section-title glitch" data-text="PLAYERS">PLAYERS</h2>
+            <p class="section-subtitle-animated">
+                <span class="typing-text">Meet the champions who define excellence on the court</span>
+            </p>
             <div class="players-grid" id="playersGrid">
                 <!-- 由 JavaScript 動態生成 -->
             </div>

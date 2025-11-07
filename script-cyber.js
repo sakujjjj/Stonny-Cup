@@ -4,7 +4,7 @@ const playersData = [
         name: "STONNY WANG",
         number: 1,
         role: "TOURNAMENT CHAMPION",
-        quote: "Leading the way to victory",
+        quote: "我是發球像砲彈，接球像牆壁、全場最穩的底線型球員。",
         emoji: "👑"
     },
     {
@@ -26,20 +26,6 @@ const playersData = [
         number: 23,
         role: "TACTICAL GENIUS",
         quote: "Strategy wins games",
-        emoji: "🎾"
-    },
-    {
-        name: "ZOE",
-        number: 5,
-        role: "ACE QUEEN",
-        quote: "Serve like thunder",
-        emoji: "🎾"
-    },
-    {
-        name: "LIANG",
-        number: 15,
-        role: "DEFENSE WALL",
-        quote: "Nothing gets past me",
         emoji: "🎾"
     },
     {

@@ -322,18 +322,48 @@ body::before {
     letter-spacing: 2px;
 }
 
-.nav-logo img {
+/* Logo 圖片包裝容器 - 網球環繞效果 */
+.logo-wrapper {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Logo 圖片 - 不縮放 */
+.logo-wrapper img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     border: 2px solid var(--cyber-cyan);
     box-shadow: 0 0 10px var(--cyber-cyan);
-    transition: transform 0.5s ease;
+    object-fit: cover;
 }
 
-.nav-logo:hover img {
-    transform: rotate(360deg);
-    box-shadow: 0 0 20px var(--cyber-cyan);
+/* 網球環繞 Logo 圖片 */
+.logo-wrapper::after {
+    content: '🥎';
+    position: absolute;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+    animation: orbit-logo 3s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes orbit-logo {
+    0% {
+        transform: rotate(0deg) translateX(35px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(35px) rotate(-360deg);
+    }
 }
 
 .glitch-text {
@@ -1126,6 +1156,65 @@ body::before {
     margin-bottom: 60px;
 }
 
+.qualification-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.qualification-card {
+    background: rgba(10, 10, 10, 0.5);
+    border: 2px solid var(--cyber-cyan);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.qualification-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0, 240, 255, 0.4);
+    border-color: var(--cyber-purple);
+}
+
+.card-title-cyber {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.card-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(0, 240, 255, 0.1);
+    color: var(--cyber-white);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.card-list li:last-child {
+    border-bottom: none;
+}
+
+.card-list li:hover {
+    padding-left: 10px;
+    color: var(--cyber-cyan);
+}
+
+.highlight-text {
+    color: var(--cyber-cyan);
+    font-weight: 700;
+    margin-right: 10px;
+}
+
 .qualification-item {
     display: flex;
     align-items: center;
@@ -1183,7 +1272,52 @@ body::before {
 
 .players-container .section-title {
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
+}
+
+.section-subtitle-animated {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 1.5rem;
+    color: var(--cyber-white);
+    opacity: 0;
+    animation: fadeInUp 1s ease 0.5s forwards;
+}
+
+.typing-text {
+    display: inline-block;
+    border-right: 3px solid var(--cyber-cyan);
+    padding-right: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(50) 1s forwards, blink 0.7s step-end infinite;
+    max-width: 0;
+}
+
+@keyframes typing {
+    from {
+        max-width: 0;
+    }
+    to {
+        max-width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .players-grid {
@@ -1662,6 +1796,19 @@ body::before {
 
     .qualification-content {
         grid-template-columns: 1fr;
+    }
+
+    .qualification-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-subtitle-animated {
+        font-size: 1.2rem;
+    }
+
+    .typing-text {
+        white-space: normal;
+        border-right: none;
     }
 
     .players-grid {
