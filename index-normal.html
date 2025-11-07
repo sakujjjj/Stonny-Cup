@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stonny Cup 網球錦標賽</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 導航選單 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="images/logo.jpeg" alt="Stonny Cup">
+                <span>STONNY CUP</span>
+            </a>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">首頁</a></li>
+                <li><a href="#about">關於比賽</a></li>
+                <li><a href="#moments">精彩回顧</a></li>
+                <li><a href="#info">賽事資訊</a></li>
+                <li><a href="#players">球員介紹</a></li>
+                <li><a href="#qa">Q&A</a></li>
+                <li><a href="#register" class="nav-cta">立即報名</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 主視覺區 -->
+    <section class="hero-section" id="home">
+        <div class="hero-bg">
+            <img src="images/hero-bg.jpeg" alt="網球場背景" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-title-wrapper">
+                <h1 class="hero-main-title">STONNY CUP</h1>
+                <p class="hero-subtitle">萬隆年終賽</p>
+            </div>
+        </div>
+        <div class="countdown-wrapper">
+            <div class="countdown-container">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">0</span>
+                    <span class="countdown-label">DAYS</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">0</span>
+                    <span class="countdown-label">HRS</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">0</span>
+                    <span class="countdown-label">MINS</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">0</span>
+                    <span class="countdown-label">SEC</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 標語區 - 簡潔設計 -->
+    <section class="slogan-section" id="about">
+        <div class="slogan-container">
+            <div class="slogan-left">
+                <h1 class="slogan-main-title">
+                    <span class="title-word">NOT JUST</span>
+                    <span class="title-word">TO PARTICIPATE</span>
+                    <span class="title-word">BUT TO LEAVE</span>
+                </h1>
+                <p class="slogan-subtitle">PASSIONATE</p>
+            </div>
+            <div class="slogan-right">
+                <div class="slogan-image-container">
+                    <img src="images/photo1.jpeg" alt="Tennis Team" class="slogan-image">
+                </div>
+                <h2 class="slogan-your-name">YOUR NAME</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- 精神標語區 - 3D 傾斜卡片 -->
+    <section class="spirit-section">
+        <div class="spirit-cards-container">
+            <!-- 卡片 1 -->
+            <div class="spirit-tilt-card">
+                <div class="card-image-overlay">
+                    <img src="images/photo1.jpeg" alt="On The Court" class="card-bg-image">
+                </div>
+                <div class="card-content">
+                    <p class="spirit-en">ON THE COURT,</p>
+                    <p class="spirit-en">EVERY SHOT IS</p>
+                    <p class="spirit-en">THE TRUE YOU</p>
+                    <div class="card-shine"></div>
+                </div>
+            </div>
+
+            <!-- 卡片 2 -->
+            <div class="spirit-tilt-card">
+                <div class="card-image-overlay">
+                    <img src="images/photo2.jpeg" alt="Real Passion" class="card-bg-image">
+                </div>
+                <div class="card-content">
+                    <p class="spirit-en-large">EVERY MOMENT</p>
+                    <p class="spirit-en">DEFINES WHO YOU ARE</p>
+                    <div class="card-shine"></div>
+                </div>
+            </div>
+
+            <!-- 卡片 3 - 特別強調 -->
+            <div class="spirit-tilt-card highlight-card">
+                <div class="card-image-overlay">
+                    <img src="images/photo3.jpeg" alt="Winners Only" class="card-bg-image">
+                </div>
+                <div class="card-content">
+                    <p class="spirit-en-huge">ONLY</p>
+                    <p class="spirit-en-huge">WINNERS</p>
+                    <p class="spirit-en-huge">REMAIN</p>
+                    <div class="card-shine"></div>
+                    <div class="winner-badge">🏆</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 照片展示區 - Moments -->
+    <section class="moments-section" id="moments">
+        <div class="moments-container">
+            <div class="moments-header">
+                <h2 class="section-title">MOMENTS</h2>
+                <p class="section-subtitle">Memories Worth Keeping</p>
+            </div>
+
+            <div class="moments-grid">
+                <!-- 大型特色照片 + 文字 -->
+                <div class="moment-item featured">
+                    <div class="moment-image">
+                        <img src="images/photo1.jpeg" alt="Champions Rise">
+                        <div class="moment-overlay"></div>
+                    </div>
+                    <div class="moment-content">
+                        <h3 class="moment-title">CHAMPIONS RISE</h3>
+                        <p class="moment-desc">Every swing brings us closer to glory</p>
+                    </div>
+                </div>
+
+                <!-- 中型照片組 -->
+                <div class="moment-item medium">
+                    <div class="moment-image">
+                        <img src="images/photo2.jpeg" alt="Fierce Battle">
+                        <div class="moment-overlay"></div>
+                    </div>
+                    <div class="moment-content">
+                        <h3 class="moment-title">FIERCE BATTLE</h3>
+                        <p class="moment-desc">The court is our battlefield</p>
+                    </div>
+                </div>
+
+                <div class="moment-item medium">
+                    <div class="moment-image">
+                        <img src="images/photo3.jpeg" alt="Team Spirit">
+                        <div class="moment-overlay"></div>
+                    </div>
+                    <div class="moment-content">
+                        <h3 class="moment-title">TEAM SPIRIT</h3>
+                        <p class="moment-desc">Together we fight, together we win</p>
+                    </div>
+                </div>
+
+                <!-- 小型照片組 -->
+                <div class="moment-item small">
+                    <div class="moment-image">
+                        <img src="images/photo4.jpeg" alt="Epic Moments">
+                        <div class="moment-overlay"></div>
+                    </div>
+                    <div class="moment-content">
+                        <h3 class="moment-title">EPIC MOMENTS</h3>
+                    </div>
+                </div>
+
+                <div class="moment-item small">
+                    <div class="moment-image">
+                        <img src="images/photo5.jpeg" alt="Victory Joy">
+                        <div class="moment-overlay"></div>
+                    </div>
+                    <div class="moment-content">
+                        <h3 class="moment-title">VICTORY JOY</h3>
+                    </div>
+                </div>
+
+                <div class="moment-item small">
+                    <div class="moment-image">
+                        <img src="images/photo6.jpeg" alt="Forever Memories">
+                        <div class="moment-overlay"></div>
+                    </div>
+                    <div class="moment-content">
+                        <h3 class="moment-title">FOREVER</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="moments-quote">
+                <p class="quote-text">"不僅要參加，更要留下你的名字"</p>
+                <p class="quote-author">— Stonny Cup 2025</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 賽事資訊區 - 3D 浮動玻璃卡片 -->
+    <section class="event-info-section" id="info">
+        <div class="event-info-container">
+            <h2 class="section-title">賽事資訊</h2>
+            <p class="section-subtitle">Tournament Information</p>
+            
+            <div class="event-details-grid">
+                <!-- 日期卡片 -->
+                <div class="glass-info-card floating-card">
+                    <div class="card-glow"></div>
+                    <div class="icon-container">
+                        <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">比賽日期</h3>
+                    <div class="card-main-info">
+                        <span class="info-number">12</span>
+                        <span class="info-unit">月</span>
+                        <span class="info-number">13</span>
+                        <span class="info-unit">日</span>
+                    </div>
+                    <p class="card-sub-info">2025 星期六</p>
+                    <div class="card-decoration"></div>
+                </div>
+
+                <!-- 地點卡片 -->
+                <div class="glass-info-card floating-card">
+                    <div class="card-glow"></div>
+                    <div class="icon-container">
+                        <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">比賽地點</h3>
+                    <div class="card-main-info location-info">
+                        <span class="location-name">華中網球場</span>
+                    </div>
+                    <p class="card-sub-info">新北市三重區華中街38號</p>
+                    <div class="card-decoration"></div>
+                </div>
+
+                <!-- 時間卡片 -->
+                <div class="glass-info-card floating-card">
+                    <div class="card-glow"></div>
+                    <div class="icon-container">
+                        <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">比賽時間</h3>
+                    <div class="card-main-info time-info">
+                        <span class="time-range">10:00 - 17:00</span>
+                    </div>
+                    <p class="card-sub-info">共 7 小時 · 請準時報到</p>
+                    <div class="card-decoration"></div>
+                </div>
+
+                <!-- 參賽人數卡片 -->
+                <div class="glass-info-card floating-card">
+                    <div class="card-glow"></div>
+                    <div class="icon-container">
+                        <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">參賽人數</h3>
+                    <div class="card-main-info">
+                        <span class="info-number">64</span>
+                        <span class="info-unit">位選手</span>
+                    </div>
+                    <p class="card-sub-info">單淘汰制 · 6 輪比賽</p>
+                    <div class="card-decoration"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 只接受最強 -->
+    <section class="challenge-section">
+        <h2 class="challenge-title">只接受最強</h2>
+    </section>
+
+    <!-- 不接受藉口 -->
+    <section class="no-excuse-section">
+        <h2 class="no-excuse-title">不接受藉口</h2>
+    </section>
+
+    <!-- 報名資格區 -->
+    <section class="qualification-section">
+        <div class="qualification-container">
+            <h2 class="section-title">報名資格</h2>
+            <div class="qualification-grid">
+                <div class="qualification-card">
+                    <h3>參賽資格</h3>
+                    <ul>
+                        <li>年滿18歲以上</li>
+                        <li>具備基本網球技能</li>
+                        <li>身體健康,無重大疾病</li>
+                    </ul>
+                </div>
+                <div class="qualification-card">
+                    <h3>Eligibility</h3>
+                    <ul>
+                        <li>18 years old or above</li>
+                        <li>Basic tennis skills required</li>
+                        <li>Good health condition</li>
+                    </ul>
+                </div>
+                <div class="qualification-card">
+                    <h3>公開</h3>
+                    <ul>
+                        <li>男子單打組</li>
+                        <li>女子單打組</li>
+                        <li>混合雙打組</li>
+                    </ul>
+                </div>
+                <div class="qualification-card">
+                    <h3>比賽</h3>
+                    <ul>
+                        <li>採用單淘汰制</li>
+                        <li>每場三盤兩勝制</li>
+                        <li>決賽採五盤三勝制</li>
+                    </ul>
+                </div>
+                <div class="qualification-card">
+                    <h3>獎勵</h3>
+                    <ul>
+                        <li>冠軍獎金 NT$150,000</li>
+                        <li>亞軍獎金 NT$30,000</li>
+                        <li>季軍獎金 NT$15,000</li>
+                    </ul>
+                </div>
+                <div class="qualification-card">
+                    <h3>Stonny</h3>
+                    <ul>
+                        <li>賽事總監</li>
+                        <li>聯絡電話: 0912-345-678</li>
+                        <li>Email: Stonny@stonnycup.com</li>
+                    </ul>
+                </div>
+                <div class="qualification-card">
+                    <h3>小組</h3>
+                    <ul>
+                        <li>每組4-6人</li>
+                        <li>小組循環賽</li>
+                        <li>前兩名晉級</li>
+                    </ul>
+                </div>
+                <div class="qualification-card">
+                    <h3>國際裁判執法</h3>
+                    <ul>
+                        <li>國際認證裁判團隊</li>
+                        <li>專業鷹眼系統輔助</li>
+                        <li>確保比賽公平公正</li>
+                    </ul>
+                </div>
+                <div class="qualification-card">
+                    <h3>報名費用</h3>
+                    <ul>
+                        <li>單打組: NT$1,500</li>
+                        <li>雙打組: NT$2,500/隊</li>
+                        <li>含比賽T恤及餐點</li>
+                    </ul>
+                </div>
+                <div class="qualification-card">
+                    <h3>裝備規定</h3>
+                    <ul>
+                        <li>自備球拍及運動鞋</li>
+                        <li>穿著運動服裝</li>
+                        <li>禁止穿著牛仔褲</li>
+                    </ul>
+                </div>
+                <div class="qualification-card">
+                    <h3>保險</h3>
+                    <ul>
+                        <li>主辦單位提供意外險</li>
+                        <li>保額200萬元</li>
+                        <li>醫療給付20萬元</li>
+                    </ul>
+                </div>
+                <div class="qualification-card">
+                    <h3>注意事項</h3>
+                    <ul>
+                        <li>雨天照常舉行(室內場地)</li>
+                        <li>請自備水壺及毛巾</li>
+                        <li>現場提供運動飲料</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sponsor-info">
+                <p class="sponsor-text">以上皆由 <span class="sponsor-name">Stonny</span> 贊助</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 球員小卡區 - 3D 傾斜互動卡片 -->
+    <section class="players-section" id="players">
+        <div class="players-container">
+            <h2 class="section-title">參賽球員</h2>
+            <p class="section-subtitle">Players · 這些都是敢贏的人</p>
+            
+            <div class="players-grid-3d" id="playersGrid">
+                <!-- 球員卡片將由 JavaScript 動態生成 (3D 傾斜互動版本) -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 報名區 -->
+    <section class="registration-section" id="register">
+        <div class="registration-container">
+            <h2 class="registration-title">邀請敢贏的人</h2>
+            <a href="#" class="registration-button" id="registerBtn">
+                立即報名
+            </a>
+        </div>
+    </section>
+
+    <!-- Q&A 區 -->
+    <section class="qa-section" id="qa">
+        <div class="qa-container">
+            <h2 class="section-title">Q & A</h2>
+            <p class="qa-subtitle">常見問題</p>
+            <p class="qa-description">關於比賽的疑問請參考以下說明</p>
+            
+            <div class="qa-list">
+                <div class="qa-item">
+                    <div class="qa-question">
+                        <span>我是初學者可以參加嗎?</span>
+                        <span class="qa-toggle">▼</span>
+                    </div>
+                    <div class="qa-answer">
+                        <p>本次比賽歡迎所有熱愛網球的朋友參加,但建議具備基本的網球技能,能夠完成基本的發球、接球動作。我們會根據報名者的程度進行分組,確保比賽的公平性與趣味性。</p>
+                    </div>
+                </div>
+
+                <div class="qa-item">
+                    <div class="qa-question">
+                        <span>報名後可以退費嗎?</span>
+                        <span class="qa-toggle">▼</span>
+                    </div>
+                    <div class="qa-answer">
+                        <p>報名截止日前7天可全額退費,7天內至截止日前可退50%,報名截止後恕不退費。如因天災等不可抗力因素取消比賽,將全額退還報名費。</p>
+                    </div>
+                </div>
+
+                <div class="qa-item">
+                    <div class="qa-question">
+                        <span>比賽使用什麼球?</span>
+                        <span class="qa-toggle">▼</span>
+                    </div>
+                    <div class="qa-answer">
+                        <p>本次比賽使用國際網球總會(ITF)認證的比賽用球,由主辦單位統一提供。參賽者無需自備比賽用球,但建議攜帶練習球於賽前熱身使用。</p>
+                    </div>
+                </div>
+
+                <div class="qa-item">
+                    <div class="qa-question">
+                        <span>現場有提供飲食嗎?</span>
+                        <span class="qa-toggle">▼</span>
+                    </div>
+                    <div class="qa-answer">
+                        <p>報名費已包含午餐便當及運動飲料。現場設有休息區,提供茶水及簡單點心。比賽期間請適時補充水分,注意身體狀況。</p>
+                    </div>
+                </div>
+
+                <div class="qa-item">
+                    <div class="qa-question">
+                        <span>可以帶親友來觀賽嗎?</span>
+                        <span class="qa-toggle">▼</span>
+                    </div>
+                    <div class="qa-answer">
+                        <p>當然可以!我們歡迎親友團到場加油。觀眾席免費入場,但請注意比賽進行時保持安靜,並遵守場地規則。</p>
+                    </div>
+                </div>
+
+                <div class="qa-item">
+                    <div class="qa-question">
+                        <span>停車方便嗎?</span>
+                        <span class="qa-toggle">▼</span>
+                    </div>
+                    <div class="qa-answer">
+                        <p>比賽場地設有地下停車場,參賽者憑報到證明可享停車優惠。建議提早抵達以確保有停車位。也可搭乘大眾運輸工具,場地鄰近捷運站,步行約5分鐘。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Stonny Cup. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">隱私權政策</a>
+                <a href="#">服務條款</a>
+                <a href="#">聯絡我們</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script-simple.js"></script>
+</body>
+</html>

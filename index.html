@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stonny Cup 網球錦標賽 - Cyber Edition</title>
+    <link rel="stylesheet" href="styles-cyber.css">
+</head>
+<body>
+    <!-- 載入畫面 -->
+    <div class="loader-wrapper" id="loader">
+        <div class="loader-content">
+            <div class="cyber-logo">
+                <img src="images/logo.jpeg" alt="Stonny Cup">
+                <div class="scan-line"></div>
+            </div>
+            <div class="loader-text">
+                <span class="glitch" data-text="LOADING">LOADING</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="loader-percentage" id="loaderPercentage">0%</div>
+            <div class="particle-container" id="particles"></div>
+        </div>
+    </div>
+
+    <!-- 導航選單 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="images/logo.jpeg" alt="Stonny Cup">
+                <span class="glitch-text" data-text="STONNY CUP">STONNY CUP</span>
+            </a>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#moments">MOMENTS</a></li>
+                <li><a href="#info">INFO</a></li>
+                <li><a href="#players">PLAYERS</a></li>
+                <li><a href="#qa">Q&A</a></li>
+                <li><a href="#register" class="nav-cta">REGISTER</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 主視覺區 -->
+    <section class="hero-section" id="home">
+        <div class="grid-bg"></div>
+        <div class="hero-bg">
+            <img src="images/hero-bg.jpeg" alt="網球場背景" class="hero-image">
+            <div class="hero-overlay"></div>
+            <div class="scan-lines"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-title-wrapper">
+                <h1 class="hero-main-title glitch" data-text="STONNY CUP">STONNY CUP</h1>
+                <p class="hero-subtitle neon-text">萬隆年終賽</p>
+            </div>
+        </div>
+        <div class="countdown-wrapper">
+            <div class="countdown-container">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">0</span>
+                    <span class="countdown-label">DAYS</span>
+                </div>
+                <div class="countdown-divider">:</div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">0</span>
+                    <span class="countdown-label">HOURS</span>
+                </div>
+                <div class="countdown-divider">:</div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">0</span>
+                    <span class="countdown-label">MINS</span>
+                </div>
+                <div class="countdown-divider">:</div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">0</span>
+                    <span class="countdown-label">SECS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 標語區 -->
+    <section class="slogan-section" id="about">
+        <div class="hex-bg"></div>
+        <div class="slogan-container">
+            <div class="slogan-left">
+                <h1 class="slogan-main-title">
+                    <span class="title-word neon-text">NOT JUST</span>
+                    <span class="title-word neon-text">TO PARTICIPATE</span>
+                    <span class="title-word neon-text">BUT TO LEAVE</span>
+                </h1>
+                <p class="slogan-subtitle glitch" data-text="PASSIONATE">PASSIONATE</p>
+            </div>
+            <div class="slogan-right">
+                <div class="slogan-image-container">
+                    <div class="hologram-effect"></div>
+                    <img src="images/photo1.jpeg" alt="Tennis Team" class="slogan-image">
+                    <div class="scan-lines"></div>
+                </div>
+                <h2 class="slogan-your-name neon-text">YOUR NAME</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- 精神標語區 -->
+    <section class="spirit-section">
+        <div class="spirit-cards-container">
+            <!-- 卡片 1 -->
+            <div class="spirit-cyber-card">
+                <div class="card-border"></div>
+                <div class="card-image-overlay">
+                    <img src="images/photo1.jpeg" alt="On The Court" class="card-bg-image">
+                    <div class="scan-lines"></div>
+                </div>
+                <div class="card-content">
+                    <p class="spirit-text">ON THE COURT,</p>
+                    <p class="spirit-text">EVERY SHOT IS</p>
+                    <p class="spirit-text neon-text">THE TRUE YOU</p>
+                </div>
+            </div>
+
+            <!-- 卡片 2 -->
+            <div class="spirit-cyber-card">
+                <div class="card-border"></div>
+                <div class="card-image-overlay">
+                    <img src="images/photo2.jpeg" alt="Real Passion" class="card-bg-image">
+                    <div class="scan-lines"></div>
+                </div>
+                <div class="card-content">
+                    <p class="spirit-text-large neon-text">EVERY MOMENT</p>
+                    <p class="spirit-text">DEFINES WHO YOU ARE</p>
+                </div>
+            </div>
+
+            <!-- 卡片 3 -->
+            <div class="spirit-cyber-card highlight-card">
+                <div class="card-border"></div>
+                <div class="card-image-overlay">
+                    <img src="images/photo3.jpeg" alt="Winners Only" class="card-bg-image">
+                    <div class="scan-lines"></div>
+                </div>
+                <div class="card-content">
+                    <p class="spirit-text-huge neon-text">ONLY</p>
+                    <p class="spirit-text-huge neon-text">WINNERS</p>
+                    <p class="spirit-text-huge neon-text">REMAIN</p>
+                    <div class="winner-badge">🏆</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 照片展示區 -->
+    <section class="moments-section" id="moments">
+        <div class="moments-container">
+            <div class="moments-header">
+                <h2 class="section-title glitch" data-text="MOMENTS">MOMENTS</h2>
+                <p class="section-subtitle neon-text">Memories Worth Keeping</p>
+            </div>
+
+            <div class="moments-grid">
+                <div class="moment-item featured">
+                    <div class="moment-border"></div>
+                    <div class="moment-image">
+                        <img src="images/photo1.jpeg" alt="Champions Rise">
+                        <div class="scan-lines"></div>
+                    </div>
+                    <div class="moment-content">
+                        <h3 class="moment-title neon-text">CHAMPIONS RISE</h3>
+                        <p class="moment-desc">Every swing brings us closer to glory</p>
+                    </div>
+                </div>
+
+                <div class="moment-item medium">
+                    <div class="moment-border"></div>
+                    <div class="moment-image">
+                        <img src="images/photo2.jpeg" alt="Fierce Battle">
+                        <div class="scan-lines"></div>
+                    </div>
+                    <div class="moment-content">
+                        <h3 class="moment-title neon-text">FIERCE BATTLE</h3>
+                        <p class="moment-desc">The court is our battlefield</p>
+                    </div>
+                </div>
+
+                <div class="moment-item medium">
+                    <div class="moment-border"></div>
+                    <div class="moment-image">
+                        <img src="images/photo3.jpeg" alt="Team Spirit">
+                        <div class="scan-lines"></div>
+                    </div>
+                    <div class="moment-content">
+                        <h3 class="moment-title neon-text">TEAM SPIRIT</h3>
+                        <p class="moment-desc">Together we fight, together we win</p>
+                    </div>
+                </div>
+
+                <div class="moment-item small">
+                    <div class="moment-border"></div>
+                    <div class="moment-image">
+                        <img src="images/photo4.jpeg" alt="Epic Moments">
+                        <div class="scan-lines"></div>
+                    </div>
+                    <div class="moment-content">
+                        <h3 class="moment-title neon-text">EPIC</h3>
+                    </div>
+                </div>
+
+                <div class="moment-item small">
+                    <div class="moment-border"></div>
+                    <div class="moment-image">
+                        <img src="images/photo5.jpeg" alt="Victory Joy">
+                        <div class="scan-lines"></div>
+                    </div>
+                    <div class="moment-content">
+                        <h3 class="moment-title neon-text">VICTORY</h3>
+                    </div>
+                </div>
+
+                <div class="moment-item small">
+                    <div class="moment-border"></div>
+                    <div class="moment-image">
+                        <img src="images/photo6.jpeg" alt="Forever">
+                        <div class="scan-lines"></div>
+                    </div>
+                    <div class="moment-content">
+                        <h3 class="moment-title neon-text">FOREVER</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="moments-quote">
+                <p class="quote-text glitch" data-text='"NOT JUST TO PARTICIPATE, BUT TO LEAVE YOUR NAME"'>"NOT JUST TO PARTICIPATE, BUT TO LEAVE YOUR NAME"</p>
+                <p class="quote-author neon-text">— Stonny Cup 2025</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 賽事資訊區 -->
+    <section class="event-info-section" id="info">
+        <div class="event-info-container">
+            <h2 class="section-title glitch" data-text="EVENT INFO">EVENT INFO</h2>
+            
+            <div class="info-grid">
+                <!-- 日期 -->
+                <div class="info-hex-card">
+                    <div class="hex-border"></div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                    </div>
+                    <h3 class="card-title neon-text">DATE</h3>
+                    <p class="card-info">
+                        <span class="info-number">12</span>
+                        <span class="info-unit">月</span>
+                        <span class="info-number">13</span>
+                        <span class="info-unit">日</span>
+                    </p>
+                    <p class="card-sub-info">週六 10:00 AM</p>
+                </div>
+
+                <!-- 地點 -->
+                <div class="info-hex-card">
+                    <div class="hex-border"></div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="card-title neon-text">LOCATION</h3>
+                    <p class="card-info">
+                        <span class="location-name">華中網球場</span>
+                    </p>
+                    <p class="card-sub-info">新北市三重區華中街38號</p>
+                </div>
+
+                <!-- 費用 -->
+                <div class="info-hex-card">
+                    <div class="hex-border"></div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="card-title neon-text">FEE</h3>
+                    <p class="card-info">
+                        <span class="info-number">200</span>
+                        <span class="info-unit">元</span>
+                    </p>
+                    <p class="card-sub-info">含場地費、獎品</p>
+                </div>
+
+                <!-- 名額 -->
+                <div class="info-hex-card">
+                    <div class="hex-border"></div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 class="card-title neon-text">QUOTA</h3>
+                    <p class="card-info">
+                        <span class="info-number">12</span>
+                        <span class="info-unit">人</span>
+                    </p>
+                    <p class="card-sub-info">額滿為止</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 報名資格區 -->
+    <section class="qualification-section">
+        <div class="qualification-container">
+            <h2 class="section-title glitch" data-text="QUALIFICATION">QUALIFICATION</h2>
+            <div class="qualification-content">
+                <div class="qualification-item">
+                    <div class="item-icon neon-text">✓</div>
+                    <p>年滿 18 歲以上</p>
+                </div>
+                <div class="qualification-item">
+                    <div class="item-icon neon-text">✓</div>
+                    <p>具備基本網球技能</p>
+                </div>
+                <div class="qualification-item">
+                    <div class="item-icon neon-text">✓</div>
+                    <p>身體健康，無重大疾病</p>
+                </div>
+                <div class="qualification-item">
+                    <div class="item-icon neon-text">✓</div>
+                    <p>遵守比賽規則與精神</p>
+                </div>
+            </div>
+            <div class="sponsor-info">
+                <p class="sponsor-text neon-text">以上皆由 Stonny 贊助</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 球員小卡區 -->
+    <section class="players-section" id="players">
+        <div class="players-container">
+            <h2 class="section-title glitch" data-text="PLAYERS">PLAYERS</h2>
+            <div class="players-grid" id="playersGrid">
+                <!-- 由 JavaScript 動態生成 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Q&A 區 -->
+    <section class="qa-section" id="qa">
+        <div class="qa-container">
+            <h2 class="section-title glitch" data-text="Q&A">Q&A</h2>
+            <div class="qa-list">
+                <div class="qa-item">
+                    <button class="qa-question">
+                        <span class="neon-text">Q:</span> 如何報名參賽？
+                        <span class="qa-icon">+</span>
+                    </button>
+                    <div class="qa-answer">
+                        <p>點擊「立即報名」按鈕，填寫報名表單即可。報名成功後會收到確認郵件。</p>
+                    </div>
+                </div>
+
+                <div class="qa-item">
+                    <button class="qa-question">
+                        <span class="neon-text">Q:</span> 比賽採用什麼賽制？
+                        <span class="qa-icon">+</span>
+                    </button>
+                    <div class="qa-answer">
+                        <p>採用單淘汰制，每場比賽為三盤兩勝制。</p>
+                    </div>
+                </div>
+
+                <div class="qa-item">
+                    <button class="qa-question">
+                        <span class="neon-text">Q:</span> 需要自備球拍嗎？
+                        <span class="qa-icon">+</span>
+                    </button>
+                    <div class="qa-answer">
+                        <p>是的，請自備球拍。現場不提供球拍租借服務。</p>
+                    </div>
+                </div>
+
+                <div class="qa-item">
+                    <button class="qa-question">
+                        <span class="neon-text">Q:</span> 有提供獎品嗎？
+                        <span class="qa-icon">+</span>
+                    </button>
+                    <div class="qa-answer">
+                        <p>有的！冠軍可獲得獎盃及獎金，前三名都有獎品。</p>
+                    </div>
+                </div>
+
+                <div class="qa-item">
+                    <button class="qa-question">
+                        <span class="neon-text">Q:</span> 可以退費嗎？
+                        <span class="qa-icon">+</span>
+                    </button>
+                    <div class="qa-answer">
+                        <p>比賽前 7 天可全額退費，3 天前可退 50%，之後恕不退費。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 報名按鈕區 -->
+    <section class="register-section" id="register">
+        <div class="register-container">
+            <h2 class="register-title glitch" data-text="READY TO COMPETE?">READY TO COMPETE?</h2>
+            <p class="register-subtitle neon-text">Join the ultimate tennis tournament</p>
+            <button class="register-btn" id="registerBtn">
+                <span>REGISTER NOW</span>
+                <div class="btn-glow"></div>
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="neon-text">&copy; 2025 Stonny Cup. All rights reserved.</p>
+            <p>Powered by Cyber Technology</p>
+        </div>
+    </footer>
+
+    <script src="script-cyber.js"></script>
+</body>
+</html>
+
